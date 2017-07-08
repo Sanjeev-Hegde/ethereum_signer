@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_transaction"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dapp.etc.SignTransactionActivity">
+
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/displayApprovalNeeded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Approval Needed"
+            android:textStyle="bold"
+            android:textColor="?android:attr/colorEdgeEffect"
+            android:layout_marginBottom="5dp"
+            android:textSize="25dp" />
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/displayTransactionTypeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Type: "
+                android:textStyle="bold"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/displayTransactionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTRACT CREATION"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/displayContractDataHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data: "
+                android:textStyle="bold"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/displayGoodsDescriptionHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Goods Description: "
+                android:textStyle="bold"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:layout_marginBottom="5dp"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/displayGoodsDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/displayPriceHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price: "
+                android:textStyle="bold"
+                android:textColor="?android:attr/colorEdgeEffect"
+                android:layout_marginBottom="5dp"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/displayPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="14dp" />
+
+        </android.support.v7.widget.LinearLayoutCompat>
+        <Button
+            android:id="@+id/ApproveSidnedTransaction"
+            style="?android:textAppearanceSmall"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/action_sign_transaction"
+            android:textStyle="bold"
+            android:elevation="10dp"
+            android:background="#56c8d8"
+            android:onClick="ApproveSidnedTransaction"
+            android:textColor="@android:color/white" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</RelativeLayout>
